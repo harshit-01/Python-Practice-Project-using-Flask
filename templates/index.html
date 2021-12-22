@@ -19,16 +19,16 @@
 
     <div class="container theme-showcase" role="main">
 
-      <div style="color:#fff; background-color:orange", class="jumbotron">
+      <div style="color:#fff; background-color:orange" class="py-3 pl-2 mb-2">
         <h1>Favorite Quotes</h1>
       </div>
       <!--for loop starts-->
       {% for r in result %}
-      <div style ="color:#fff;background-color:blue">
-        <h1> {{ r.author }} </h1>
+      <div style ="color:black">
+        <h3> # {{ r.author }} </h1>
       </div>
-       <div style ="color:#fff;font-size:28px;background-color:green">
-        <p> {{ r.quote }} </p>
+       <div style ="color:blue;font-size:24px;">
+        <p> <i>{{ r.quote }} </i> </p>
       </div>
       {% endfor %}
 
